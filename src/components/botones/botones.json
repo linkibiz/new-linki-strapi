@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_botones_botones",
+  "info": {
+    "displayName": "Botones",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo_de_boton": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "perfiles",
+  "info": {
+    "singularName": "perfil",
+    "pluralName": "perfiles",
+    "displayName": "perfil",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "apellido": {
+      "type": "string"
+    },
+    "profesion": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "numero_de_contacto": {
+      "type": "biginteger"
+    },
+    "description": {
+      "type": "text"
+    },
+    "redes_sociales": {
+      "type": "component",
+      "repeatable": false,
+      "component": "redes-sociales.redes-sociales"
+    },
+    "asegurado": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::asegurado.asegurado",
+      "mappedBy": "perfil"
+    }
+  }
+}

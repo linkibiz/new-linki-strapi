@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "asegurados",
+  "info": {
+    "singularName": "asegurado",
+    "pluralName": "asegurados",
+    "displayName": "asegurado",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "apellido": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "email"
+    },
+    "fecha_de_nacimiento": {
+      "type": "date"
+    },
+    "seguros": {
+      "type": "component",
+      "repeatable": true,
+      "component": "seguros.seguros"
+    },
+    "botones": {
+      "type": "component",
+      "repeatable": false,
+      "component": "botones.botones"
+    },
+    "RandomID": {
+      "type": "string"
+    },
+    "PIN": {
+      "type": "string"
+    },
+    "perfil": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::perfil.perfil",
+      "inversedBy": "asegurado"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_contacto_contacto_de_emergencias",
+  "info": {
+    "displayName": "Contacto de emergencia"
+  },
+  "options": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Apellido": {
+      "type": "string"
+    },
+    "Numero_de_telefono": {
+      "type": "string"
+    },
+    "Relacion": {
+      "type": "string"
+    }
+  }
+}

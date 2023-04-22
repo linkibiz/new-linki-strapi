@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_seguros_seguros",
+  "info": {
+    "displayName": "Seguros",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "seguro": {
+      "type": "string"
+    },
+    "pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "fecha_de_renovacion": {
+      "type": "date"
+    },
+    "numero_de_poliza": {
+      "type": "string"
+    },
+    "aseguradora": {
+      "type": "enumeration",
+      "enum": [
+        "Mapfre",
+        "Assa",
+        "Seguros Suramerica",
+        "Internacional de Seguros",
+        "Aeguradora Ancon",
+        "Banesco Seguros",
+        "Optima Cia de Seguros",
+        "Nacional de Seguros",
+        "Fedpa Seguros",
+        "Acerta Seguros",
+        "Palig",
+        "IFS",
+        "WWM",
+        "Bupa",
+        "Aliado Seguros",
+        "CHUBB",
+        "BMI"
+      ],
+      "required": false
+    }
+  }
+}
