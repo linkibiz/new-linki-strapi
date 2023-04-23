@@ -38,7 +38,8 @@
       "type": "string"
     },
     "PIN": {
-      "type": "string"
+      "type": "string",
+      "default": "4444"
     },
     "perfil": {
       "type": "relation",
