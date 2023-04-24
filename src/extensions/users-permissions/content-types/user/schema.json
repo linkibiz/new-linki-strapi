@@ -68,12 +68,6 @@
     },
     "PIN": {
       "type": "string"
-    },
-    "asegurado": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::asegurado.asegurado",
-      "inversedBy": "user"
     }
   }
 }
