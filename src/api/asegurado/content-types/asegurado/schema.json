@@ -46,6 +46,12 @@
       "relation": "oneToOne",
       "target": "api::perfil.perfil",
       "inversedBy": "asegurado"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "asegurado"
     }
   }
 }
